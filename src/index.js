@@ -1,10 +1,11 @@
-import { header, heroImage, mainText } from "./template.js"
+import { header, menuBar, heroImage, mainText } from "./template.js"
 
 const content = document.getElementById("content")
 
 // content.body.appendChild(bareBones())
 
 content.appendChild(header())
+content.appendChild(menuBar())
 content.appendChild(heroImage())
 content.appendChild(mainText())
 

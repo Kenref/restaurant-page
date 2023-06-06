@@ -12,7 +12,30 @@ function header() {
     return header
 }
 
+function menuBar() {
+	const menuBar = document.createElement("nav");
+	menuBar.classList.add("menuBar");
 
+	const home = document.createElement("a");
+	home.textContent = "Home";
+	home.classList.add("menu-bar-item");
+	// home.setAttribute("href", "google.com")
+	menuBar.appendChild(home);
+
+	const menu = document.createElement("a");
+	menu.textContent = "Menu";
+	menu.classList.add("menu-bar-item");
+	// menu.setAttribute("href", "google.com")
+	menuBar.appendChild(menu);
+
+	const contact = document.createElement("a");
+	contact.textContent = "Contact";
+	contact.classList.add("menu-bar-item");
+	// contact.setAttribute("href", "google.com")
+	menuBar.appendChild(contact);
+
+	return menuBar;
+}
 
 function heroImage() {
     const heroImage = new Image()
@@ -21,7 +44,6 @@ function heroImage() {
 
     return heroImage
 }
-
 
 
 function mainText() {
@@ -45,5 +67,5 @@ function mainText() {
 
 
 
-export { header, heroImage, mainText }
+export { header, menuBar, heroImage, mainText }
 
