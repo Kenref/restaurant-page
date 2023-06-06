@@ -6,10 +6,9 @@ const content = document.getElementById("content")
 
 // content.body.appendChild(bareBones())
 
-content.appendChild(header())
-content.appendChild(menuBar())
+content.appendChild(header()).appendChild(menuBar());
+// content.appendChild(menuBar())
 content.appendChild(mainText())
 
 
 
-//figure out how to use document.query selector with modules

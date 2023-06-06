@@ -11,32 +11,63 @@
     background-image: url(../images/restaurant-inside.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+
 }
 
 .header {
-    margin-top: 30px;
-    color: white;
+    color: rgb(230, 220, 82);
     background-color: brown;
     width: 100%;
-    padding: 30px;
-    margin-top: 0px;
+    padding: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.restaurant-name {
+    font-size: 3rem;
 }
 
 .menu-bar {
     display: flex;
     justify-content: space-around;
-    width: 20rem;
+    width: 20vw;
+    font-size: 1.5rem;
 }
 
 .menu-bar-item {
     color: white;
-    /* background-color: white; */
     margin: 10px;
 }
 
 .main-text {
-    background-color: white;
+    background-color: rgb(169, 161, 61);
+    width: 65vw;
+    height: 100vh;
+    font-size: 3rem;
+    color: brown;
+    padding: 50px;
+}
+
+.copy-with-picture {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.bartender-picture {
+    width: 20rem;
+}
+
+.section-1 {
+    margin-right: 80px;
+}
+
+.beer-picture {
+    width: 20rem;
+    margin-right: 80px;
+}
+
+.copy-with-picture-2 {
+    display: flex;
 }
