@@ -1,4 +1,5 @@
-import restaurantFront from "./restaurant-front.jpeg"
+import restaurantFront from "./images/restaurant-front.jpeg"
+
 
 function header() {
     const header = document.createElement("header")
@@ -14,7 +15,7 @@ function header() {
 
 function menuBar() {
 	const menuBar = document.createElement("nav");
-	menuBar.classList.add("menuBar");
+	menuBar.classList.add("menu-bar");
 
 	const home = document.createElement("a");
 	home.textContent = "Home";
@@ -37,14 +38,6 @@ function menuBar() {
 	return menuBar;
 }
 
-function heroImage() {
-    const heroImage = new Image()
-    heroImage.src = restaurantFront
-    heroImage.alt = "The front of the tavern"
-
-    return heroImage
-}
-
 
 function mainText() {
     const mainText = document.createElement("div")
@@ -53,7 +46,12 @@ function mainText() {
     const section1 = document.createElement("p")
     section1.textContent =
 		"Esse cillum officia amet sunt anim aute veniam in veniam fugiat quis et nisi fugiat voluptate. Culpa tempor esse eu incididunt exercitation esse ex. Laboris dolore id fugiat commodo dolore dolor aute irure culpa. Proident consectetur est ullamco commodo ut esse ad irure sint eiusmod culpa anim ex excepteur. Culpa ullamco incididunt non nostrud deserunt labore non ipsum culpa nostrud magna veniam adipisicing. Lorem nulla sit aliqua cupidatat ipsum proident occaecat consequat. Officia voluptate cupidatat eu esse ipsum irure id duis sint dolor.";
-    mainText.appendChild(section1)
+	mainText.appendChild(section1)
+	
+	const section2 = document.createElement("p")
+	section2.textContent =
+		"Commodo consectetur Lorem pariatur cillum elit officia occaecat sit nisi dolore. Id et culpa in ex anim aute non adipisicing cillum aliquip aliquip dolore non mollit et. Nostrud do enim cupidatat adipisicing ipsum. Magna do adipisicing aute ea labore.";
+	mainText.appendChild(section2)
 
     return mainText
 }
@@ -67,5 +65,5 @@ function mainText() {
 
 
 
-export { header, menuBar, heroImage, mainText }
+export { header, menuBar, mainText }
 

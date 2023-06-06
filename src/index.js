@@ -1,4 +1,6 @@
-import { header, menuBar, heroImage, mainText } from "./template.js"
+import { header, menuBar, mainText } from "./home.js"
+import "./css/home-style.css"
+
 
 const content = document.getElementById("content")
 
@@ -6,7 +8,6 @@ const content = document.getElementById("content")
 
 content.appendChild(header())
 content.appendChild(menuBar())
-content.appendChild(heroImage())
 content.appendChild(mainText())
 
 
