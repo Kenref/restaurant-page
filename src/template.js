@@ -1,11 +1,49 @@
-export function tester() {
-    let content = document.querySelector("#content")
-    item = document.createElement("h3")
-    item.textContent = "asdf"
-    content.appendChild(item)
+class User {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+}
+
+function printName(user) {
+    console.log(`User's name is ${user.name}`)
+}
+
+function printAge(user) {
+    console.log(`User is ${user.age} years old`)
+}
+
+function bareBones() {
+    const content = document.getElementById("content")
+    const title = document.createElement("h1")
+    title.textContent = "Welcome to the tantalising tavern"
+    content.appendChild(title)
+
+    
+    const heroImage = document.createElement("img")
+    heroImage.src = "src/front.jpeg";
+    heroImage.alt = "Frontal shot of the tavern"
+    content.appendChild(heroImage)
+
+
 }
 
 
+
+
+
+
+// tumultuous tavern
+// tantalising 
+// tasteless a drink name
+
+
+
+
+
+
+export default User
+export { printName, printAge, bareBones }
 
 
 

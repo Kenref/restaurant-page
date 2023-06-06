@@ -1,7 +1,14 @@
-import tester from "./template.js"
+import User, { printName, printAge, bareBones } from "./template.js"
+import heroImage from "./front.jpeg";
 
-console.log("hello")
+
+const user = new User("bob", 11)
+console.log(user)
+
+printName(user)
+printAge(user)
+bareBones()
 
 
-// let content = document.querySelector("#content")
-tester()
+
+//figure out how to use document.query selector with modules
