@@ -1,13 +1,12 @@
-import User, { printName, printAge, bareBones } from "./template.js"
-import heroImage from "./front.jpeg";
+import { header, heroImage, mainText } from "./template.js"
 
+const content = document.getElementById("content")
 
-const user = new User("bob", 11)
-console.log(user)
+// content.body.appendChild(bareBones())
 
-printName(user)
-printAge(user)
-bareBones()
+content.appendChild(header())
+content.appendChild(heroImage())
+content.appendChild(mainText())
 
 
 

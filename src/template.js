@@ -1,34 +1,40 @@
-class User {
-    constructor(name, age) {
-        this.name = name
-        this.age = age
-    }
-}
+import restaurantFront from "./restaurant-front.jpeg"
 
-function printName(user) {
-    console.log(`User's name is ${user.name}`)
-}
+function header() {
+    const header = document.createElement("header")
+    header.classList.add("header")
 
-function printAge(user) {
-    console.log(`User is ${user.age} years old`)
-}
+    const restaurantName = document.createElement("h1")
+    restaurantName.textContent = "Welcome to the Tantalising Tavern"
 
-function bareBones() {
-    const content = document.getElementById("content")
-    const title = document.createElement("h1")
-    title.textContent = "Welcome to the tantalising tavern"
-    content.appendChild(title)
+    header.appendChild(restaurantName)
 
-    
-    const heroImage = document.createElement("img")
-    heroImage.src = "src/front.jpeg";
-    heroImage.alt = "Frontal shot of the tavern"
-    content.appendChild(heroImage)
-
-
+    return header
 }
 
 
+
+function heroImage() {
+    const heroImage = new Image()
+    heroImage.src = restaurantFront
+    heroImage.alt = "The front of the tavern"
+
+    return heroImage
+}
+
+
+
+function mainText() {
+    const mainText = document.createElement("div")
+    mainText.classList.add("main-text")
+
+    const section1 = document.createElement("p")
+    section1.textContent =
+		"Esse cillum officia amet sunt anim aute veniam in veniam fugiat quis et nisi fugiat voluptate. Culpa tempor esse eu incididunt exercitation esse ex. Laboris dolore id fugiat commodo dolore dolor aute irure culpa. Proident consectetur est ullamco commodo ut esse ad irure sint eiusmod culpa anim ex excepteur. Culpa ullamco incididunt non nostrud deserunt labore non ipsum culpa nostrud magna veniam adipisicing. Lorem nulla sit aliqua cupidatat ipsum proident occaecat consequat. Officia voluptate cupidatat eu esse ipsum irure id duis sint dolor.";
+    mainText.appendChild(section1)
+
+    return mainText
+}
 
 
 
@@ -39,14 +45,5 @@ function bareBones() {
 
 
 
+export { header, heroImage, mainText }
 
-
-
-export default User
-export { printName, printAge, bareBones }
-
-
-
-// <h1>Very nice restaurant</h1>
-// <img src="image.jpg" alt="Photo of the restaurant">
-// <p>Aliquip occaecat duis occaecat minim reprehenderit voluptate labore tempor magna eiusmod incididunt.</p>
