@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
 }
 
 .restaurant-name {
@@ -39,6 +40,10 @@
 .menu-bar-item {
     color: white;
     margin: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .main-text {
@@ -48,6 +53,7 @@
     font-size: 3rem;
     color: brown;
     padding: 50px;
+    padding-top: 50px;
 }
 
 .copy-with-picture {
@@ -70,4 +76,9 @@
 
 .copy-with-picture-2 {
     display: flex;
+    
+}
+
+.inactive {
+    display: none;
 }

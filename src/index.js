@@ -4,11 +4,9 @@ import "./css/home-style.css"
 
 const content = document.getElementById("content")
 
-// content.body.appendChild(bareBones())
 
 content.appendChild(header()).appendChild(menuBar());
-// content.appendChild(menuBar())
-content.appendChild(mainText())
+const home = content.appendChild(mainText())
 
-
-
+//remove home
+// content.removeChild(home)
