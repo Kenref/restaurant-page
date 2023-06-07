@@ -1,0 +1,13 @@
+.menu-container {
+    background-color: rgb(169, 161, 61);
+    width: 65vw;
+    height: 100vh;
+    font-size: 3rem;
+    color: brown;
+    padding: 50px;
+    padding-top: 50px;
+}
+
+.dwarf-picture {
+    width: 30rem;
+}

@@ -1,5 +1,7 @@
 import bartender from "./images/bartender.jpg"
 import beer from "./images/elemental-beer.jpg"
+import "./css/home-style.css";
+
 
 function header() {
     const header = document.createElement("header")
