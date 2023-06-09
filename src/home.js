@@ -49,7 +49,7 @@ function mainText() {
 
     const section1 = document.createElement("p")
     section1.textContent =
-		"Welcome to The Enchanted Stein, a haven for all lovers of fantasy and brews! Step into a realm where imagination flows as freely as the finest ale, and let us transport you to a world of enchantment and merriment. ";
+		"Welcome to The Tantalising Tavern, a haven for all lovers of fantasy and brews! Step into a realm where imagination flows as freely as the finest ale, and let us transport you to a world of enchantment and merriment. ";
 	section1.classList.add("section-1")
 	copyWithPicture.appendChild(section1)
 

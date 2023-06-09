@@ -34,7 +34,6 @@
     display: flex;
     justify-content: space-around;
     width: 20vw;
-    font-size: 1.5rem;
 }
 
 .menu-bar-item {
@@ -49,8 +48,8 @@
 .main-text {
     background-color: rgb(169, 161, 61);
     width: 65vw;
-    height: 100vh;
-    font-size: 3rem;
+    height: 120vh;
+    font-size: 2rem;
     color: brown;
     padding: 50px;
     padding-top: 50px;
@@ -78,11 +77,3 @@
     display: flex;
     
 }
-
-.inactive {
-    display: none;
-}
-
-/* .copy-with-picture, .copy-with-picture-2 {
-    display: none;
-} */
